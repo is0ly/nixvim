@@ -2,14 +2,15 @@
   lua = x: {__raw = x;};
 in {
   colorschemes = {
-    base16 = {
-      enable = false;
-      setUpBar = false;
-      colorscheme = import ../../colors/${config.theme}.nix {};
+    #base16 = {
+      #enable = false;
+      #setUpBar = false;
+      #colorscheme = import ../../colors/${config.theme}.nix {};
     };
     gruvbox = {
       enable = true;
       settings = {
+        terminal_colors = true;
         transparent_mode = true;
       };
     };
